@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Module containing generator yielding
-random number for 10 iterations
+Module containing function which returns
+list of random numbers from imported generator
 """
 import asyncio
 import random
