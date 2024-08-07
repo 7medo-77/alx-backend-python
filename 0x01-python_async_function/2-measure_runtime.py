@@ -3,7 +3,8 @@
 Module which exports a function
 that returns time elapsed
 """
-import asyncio, random, time
+import asyncio
+import time
 from typing import List
 wait_n = __import__('1-concurrent_coroutines').wait_n
 
