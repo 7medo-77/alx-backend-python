@@ -5,9 +5,10 @@ random number for 10 iterations
 """
 import asyncio
 import random
+from typing import AsyncGenerator
 
 
-async def async_generator():
+async def async_generator() -> AsyncGenerator[float, None] :
     """
     Generator yielding random number for 10 iterations
     """
