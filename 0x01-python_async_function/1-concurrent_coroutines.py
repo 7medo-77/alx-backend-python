@@ -16,8 +16,7 @@ async def wait_n(n: int, max_delay: int = 10) -> List[float]:
     """
     arrayFloat: List[float] = []
 
-    for number in range(0, n):
-        newNumber: float = await wait_random(max_delay)
-        arrayFloat.append(newNumber)
+    for _ in range(n):
+        arrayFloat.append(await wait_random(max_delay))
 
     return sorted(arrayFloat)
